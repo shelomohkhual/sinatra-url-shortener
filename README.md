@@ -61,6 +61,6 @@ We will be using this project to learn about deployment to the web on Monday (15
 
 [bitly]: http://bitly.com/
 [tinycc]: http://tiny.cc/
-[ActiveRecord validations]: http://guides.rubyonrails.org/active_record_validations.html.
+[ActiveRecord validations]: http://guides.rubyonrails.org/active_record_validations.html
 [URI module]: http://www.ruby-doc.org/stdlib-2.6.3/libdoc/uri/rdoc/URI.html
 [errors]: http://guides.rubyonrails.org/active_record_validations.html#validations-overview-errors
