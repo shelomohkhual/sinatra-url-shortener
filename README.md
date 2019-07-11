@@ -46,7 +46,7 @@ If the URL is not valid, use the [errors][] method to display a helpful error me
 
 Using Javascript, convert your form to an AJAX form that returns the shortened URL without needing to refresh the page.
 
-### After you have completed your project, whether if you completed Challenge Mode or not, please convert your app to be using PostgreSQL. Please test and ensure that your app works after conversion. If you would like, you can start your project in PostgreSQL directly rather than SQLite.
+### After you have completed your project, whether if you completed Challenge Mode or not, please convert your app to be using PostgreSQL. Please test and ensure that your app works after conversion. If you would like, you can start your project in PostgreSQL directly rather than SQLite. If you get the error ```ActiveRecord::NoDatabaseError: FATAL:  role "recode" does not exist``` then use the command ```sudo -u postgres createuser -s $(whoami);``` in terminal
 
 To do this, you will likely need to switch gems (remove ```sqlite3``` and add ```pg```), and change database.yml to use the adapter ```postgresql```. You will also need to change the database name. Depending on your computer configuration, you might also need to add a username and password key-value to your database.yml.
 
