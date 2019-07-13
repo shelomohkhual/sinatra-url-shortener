@@ -1,0 +1,37 @@
+<div class="index">
+
+        <form method="POST" action="/">
+            <input type="text" name="ori_url" placeholder="Enter Your LOOONG URL" class="input_box">
+            <input class="button" type="submit" value="SHORTEN">
+        </form>
+        
+        
+        <% if @exist_url != nil %>
+            <div class="column" style="text-align:center;">
+            <%# <h5>Your Shorten URL : <%=p @exist_url.shrt_url%>
+            <a href="/<%=@exist_url.shrt_url%>" target="_blank"><%=@exist_url.shrt_url%></a>
+            <br>
+        <%=p @exist_url.ori_url%>
+        </div>
+        <% elsif @new_url != nil  %>
+        <div class="column" style="text-align:center;">
+        <a href="/<%=@new_url.shrt_url%>" target="_blank"><%=@exist_url.shrt_url%></a>
+        <br>
+        <%=p @new_url.ori_url%>
+        </div>
+        <% else %>
+        <div class="column">
+        <h3>Lastest Shorten Urls</h3>
+        <% 5.times do |n| %>
+                    <div style="text-align:center;">
+                    <a href="/<%=@urls.all[@urls_count-(n+1)].shrt_url%>" target="_blank"><%=@urls.all[@urls_count-(n+1)].shrt_url%></a>
+                    <br>
+                    <%=@urls.all[@urls_count-(n+1)].ori_url %>
+                    <hr>
+                    </div>
+
+        <% end %>
+        <% end %>
+    </div>
+
+</div>
